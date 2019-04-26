@@ -1,2 +1,0 @@
-# ReactPreactice
-Created with CodeSandbox
