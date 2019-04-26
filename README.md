@@ -1,2 +1,2 @@
-# ReactPreactice
+# ReactPractice
 Created with CodeSandbox
