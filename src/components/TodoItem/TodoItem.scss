@@ -15,10 +15,17 @@
   }
   .delete {
     margin-left: 1rem;
+
+    color: #d83624;
+    font-size: 0.8rem;
+    &:hover {
+      color: #e5a7a0; 
+
     color: #e5a7a0;
     font-size: 0.8rem;
     &:hover {
       color: #d83624;
+
       text-decoration: underline;
     }
   }
@@ -33,5 +40,8 @@
  
 .todo-item + .todo-item {
   // 컴포넌트 사이에 위쪽 테두리를 설정합니다.
-  border-top: 1px solid $oc-gray-1;
+
+  border-top: 1px solid #dbd5d4;
+  border-top: 1px solid #847d7c;
+
 }
