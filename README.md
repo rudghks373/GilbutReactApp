@@ -1,2 +1,2 @@
-# ReactPractice
-Created with CodeSandbox
+>**길벗**
+>(리액트를 다루는 기술)에 나오는 App 개발입니다.
