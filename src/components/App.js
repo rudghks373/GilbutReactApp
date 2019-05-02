@@ -5,16 +5,12 @@ import TodoList from "./TodoList";
 
 class App extends Component {
   state = {
-    input: "",
+    input: "", // input 값
+    // 일정 데이터 초깃값
     todos: [
       { id: 0, text: "리액트 공부하기", done: true },
       { id: 1, text: "컴포넌트 스타일링 해보기", done: false }
     ]
-  };
-
-  id = 1;
-  getId = () => {
-    return ++this.id;
   };
 
   handleChange = e => {
@@ -24,33 +20,13 @@ class App extends Component {
     });
   };
 
-  handleInsert = () => {
-    const { todos, input } = this.state;
-
-    // 새 데이터 객체 만들기
-    const newTodo = {
-      text: input,
-      done: false,
-      id: this.getId()
-    };
-
-    this.setState({
-      todos: [...todos, newTodo],
-      input: ""
-    });
-  };
-
   render() {
-    const { input } = this.state;
-    const { handleChange, handleInsert } = this;
+    const { input, todos } = this.state;
+    const { handleChange } = this;
 
     return (
       <PageTemplate>
-        <TodoInput
-          onChange={handleChange}
-          onInsert={handleInsert}
-          value={input}
-        />
+        <TodoInput onChange={handleChange} value={input} />
         <TodoList todos={todos} />
       </PageTemplate>
     );
