@@ -9,7 +9,8 @@ class App extends Component {
     // 일정 데이터 초깃값
     todos: [
       { id: 0, text: "리액트 공부하기", done: true },
-      { id: 1, text: "컴포넌트 스타일링 해보기", done: false }
+      { id: 1, text: "컴포넌트 스타일링 해보기", done: false },
+      { id: 2, text: "컴포넌트 스타일링 해보기2", done: false }
     ]
   };
   // 일정 데이터 안에 들어가는 id 값
