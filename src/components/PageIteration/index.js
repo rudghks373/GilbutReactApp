@@ -1,1 +1,1 @@
-export { default } from "./IterationSample";
+export { default } from "./PageIteration";

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PageTemplate from "./PageTemplate";
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
+import IterationSample from "./IterationSample";
 
 class App extends Component {
   state = {
